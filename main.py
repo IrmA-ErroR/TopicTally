@@ -28,5 +28,10 @@ def about():
     return render_template('about.html')
 
 
+@app.route("/dh")
+def dashboards():
+    return render_template('dashboards.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True)
